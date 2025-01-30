@@ -1,4 +1,4 @@
-package EXTRAS;
+
 import java.util.*;
 public class p1 {
     public static int generate(int high , int low , Random random){
