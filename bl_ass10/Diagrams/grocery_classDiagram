@@ -1,0 +1,22 @@
+grocery class diagram 
+
+     +-------------------------+     +-----------------------------+     +--------------------------+
+	 |     Customer            |     |           Product           |     |        BillGenerator     |
+	 +-------------------------+     +-----------------------------+     +--------------------------+
+	 | -customerName:String	   |     | -productName:String         |     |  -productQuantity:Integer|
+	 | -customerID:String      |     | -productPrice:Integer       |     | -productPrice:Double     |
+	 +-------------------------+     +-----------------------------+     |  -discount:Double        |
+	 | getCustName():String    |     | -getProductQuantity():void  |     +--------------------------+
+	 | getCustID():String      |     | -IsProdAvailable():Boolean  |     |  -generate Bill():Double |
+	 +-------------------------+     +-----------------------------+     +--------------------------+
+	             |                                  |                                   |
+				 |                                  |                                   |
+				 |                                  |                                   |
+				 |                                  |                                   |
+				 |                                  |                                   |
+				 |----------<orders>----------------|                                   |
+				 |                                  |                                   |
+				 |                                  |-------------<uses>----------------|
+				 |                                  |                                   |
+ 				 |                                  |                                   |
+				 +------------------------------<returns bill>--------------------------+
