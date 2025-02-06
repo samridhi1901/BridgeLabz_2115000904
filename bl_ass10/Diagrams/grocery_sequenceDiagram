@@ -1,0 +1,13 @@
+  grocery store sequence diagram 
+              
+         		       Customer                    Product                           BillGenerator
+	       		          |                          |                                    |
+				  |                          |                                    |
+				  |<--isProductAvailable---->|                                    |
+				  |                          |                                    |
+				  |                          |                                    |
+				  |<---availableStatus()-----|                                    |
+				  |                          |                                    |
+				  |----productQuantity()---->|                                    |
+				  |                          |------generateBill(price,quantity)->|
+				  |<------------------returnBill()--------------------------------|
