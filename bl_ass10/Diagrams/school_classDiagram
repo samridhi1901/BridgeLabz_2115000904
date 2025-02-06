@@ -1,1 +1,18 @@
-
+Class Diagram
++-------------------------------+     +-----------------------------+        +-----------------------------+
+|            Students           |     |           Subject           |        |       GradeCalculator       |
++-------------------------------+     +-----------------------------+        +-----------------------------+
+|       -studentName:String     |     |  -subjectName:String        |        |  -totalSum:Integer          |
+|        -studentsIS:Integer    |     |  -subjectMarks:Integer      |        |  -average:double            |
++-------------------------------+     +-----------------------------+        |   -grade:String             |
+|    getStudentName():String    |     | -getstudentName() :String   |        +-----------------------------+                             
+|    getStudentID():Integer     |	  | -getsubjectMarks():Integer  |        |   getGrade():String         |
++-------------------------------+     +-----------------------------+        |                             |
+                |                                      |                     +-----------------------------+
+				|                                      |                                    |
+				|                                      |                                    |
+				|------------<has many>----------------|---------------<uses>---------------|                                    |
+				|                                      |                                    |
+				|                                      |                                    |
+				|                                      |                                    |
+				---------------------------------<return grades>-----------------------------
