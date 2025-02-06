@@ -1,0 +1,26 @@
+object diagram of grocer store  
+                 +-----------------------------------+
+				 |              Customer             |
+				 +-----------------------------------+
+				 |      CustomerName:Alice           |
+				 |      products:products[]          |
+				 +-----------------------------------+
+				                  |
+								  |
+							  <has many>
+							      |
+								  |
+			     +-----------------------------------+
+				 |            Product                |
+				 +-----------------------------------+
+				 |     ProductName:Apples            |
+				 |     productQuantity:2kg           |
+				 |     productPrice:3$ per kg        |
+				 +-----------------------------------+
+				 +-----------------------------------+
+				 |           product                 |
+				 +-----------------------------------+
+				 |     productName:Milk              |
+				 |     productQuantity:1Litre        |
+				 |     productPrice:2$ per litre     |
+				 +-----------------------------------+
